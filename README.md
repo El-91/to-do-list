@@ -4,6 +4,7 @@ A simple and clean to-do list app built with **React** and **Vite**, as part of 
 
 ![Screenshot of the app](./src/assets/Screenshot.png)
 
+🔗 **Live demo:** [todo-list-el91.vercel.app](https://todo-list-el91.vercel.app)
 
 ## Features
 
@@ -19,6 +20,7 @@ A simple and clean to-do list app built with **React** and **Vite**, as part of 
 - [Vite](https://vite.dev/)
 - CSS
 - ESLint
+- Deployed on [Vercel](https://vercel.com/)
 
 ## What I practised
 
@@ -33,20 +35,18 @@ A simple and clean to-do list app built with **React** and **Vite**, as part of 
 
 ```
 src/
-├── App.jsx        # Root component
-├── ToDoList.jsx   # Holds the state and the logic
-├── TaskItem.jsx   # Displays a single task
-├── main.jsx       # Entry point
-└── index.css      # Styles
+├── App.jsx         # Root component
+├── ToDoList.jsx    # Holds the state and the logic
+├── TaskItems.jsx   # Displays a single task
+├── main.jsx        # Entry point
+└── index.css       # Styles
 ```
 
 ## Getting started
 
 ```bash
-git clone https://github.com/<your-username>/to-do-list.git
+git clone https://github.com/El-91/to-do-list.git
 cd to-do-list
 npm install
 npm run dev
 ```
-
-Then open the URL shown in the terminal (usually `http://localhost:5173`).
