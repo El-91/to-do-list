@@ -1,6 +1,6 @@
 function TaskItems({ task, index, isLast, deleteTask, moveTaskUp, moveTaskDown }){
     return( <li>
-            <span className='text'>{task}</span>
+            <span className="text" translate="no">{task}</span>
             <button className='delete-button'
             onClick={()=> deleteTask(index)}>Delete🗑️
             </button>
