@@ -13,6 +13,8 @@ A simple and clean to-do list app built with **React** and **Vite**, as part of 
 - Delete a task
 - Reorder tasks with **move up** / **move down**
 - Move buttons are disabled when a task is already first or last
+- Tasks are **saved in the browser** (`localStorage`) and persist after a page refresh
+- Task text is protected from browser auto-translation
 
 ## Tech stack
 
@@ -25,7 +27,9 @@ A simple and clean to-do list app built with **React** and **Vite**, as part of 
 ## What I practised
 
 - Building **functional components**
-- Managing state with the **`useState`** hook
+- Managing state with the **`useState`** hook (including lazy initialisation)
+- Running side effects with the **`useEffect`** hook
+- Persisting data with **`localStorage`** and `JSON.stringify` / `JSON.parse`
 - Updating arrays **immutably** (spread operator, `filter`, destructuring swap)
 - Passing data and functions between components with **props**
 - Rendering lists with **`map`** and `key`
@@ -36,7 +40,7 @@ A simple and clean to-do list app built with **React** and **Vite**, as part of 
 ```
 src/
 ├── App.jsx         # Root component
-├── ToDoList.jsx    # Holds the state and the logic
+├── ToDoList.jsx    # Holds the state, the logic and the persistence
 ├── TaskItems.jsx   # Displays a single task
 ├── main.jsx        # Entry point
 └── index.css       # Styles
