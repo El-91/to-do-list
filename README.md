@@ -1,16 +1,52 @@
-# React + Vite
+# 🗒️ To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean to-do list app built with **React** and **Vite**, as part of my React learning path.
 
-Currently, two official plugins are available:
+![Screenshot of the app](./src/assets/Screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add a task with the **Add** button or the **Enter** key
+- Empty tasks are ignored
+- Delete a task
+- Reorder tasks with **move up** / **move down**
+- Move buttons are disabled when a task is already first or last
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [React](https://react.dev/)
+- [Vite](https://vite.dev/)
+- CSS
+- ESLint
+
+## What I practised
+
+- Building **functional components**
+- Managing state with the **`useState`** hook
+- Updating arrays **immutably** (spread operator, `filter`, destructuring swap)
+- Passing data and functions between components with **props**
+- Rendering lists with **`map`** and `key`
+- Handling events (`onClick`, `onChange`, `onKeyDown`)
+
+## Project structure
+
+```
+src/
+├── App.jsx        # Root component
+├── ToDoList.jsx   # Holds the state and the logic
+├── TaskItem.jsx   # Displays a single task
+├── main.jsx       # Entry point
+└── index.css      # Styles
+```
+
+## Getting started
+
+```bash
+git clone https://github.com/<your-username>/to-do-list.git
+cd to-do-list
+npm install
+npm run dev
+```
+
+Then open the URL shown in the terminal (usually `http://localhost:5173`).
